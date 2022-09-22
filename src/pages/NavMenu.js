@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const NAVLINK = [
     { content: "깔끔이청소 소개", link: "/sub01" },
@@ -14,9 +14,7 @@ const NavMenu = () => {
             {
                 NAVLINK.map((it, idx) => {
                     return (
-                        <li key={idx}>
-                            <NavLink to={it.link}>{it.content}</NavLink>
-                        </li>
+                        <li key={idx}><NavLink to={it.link}>{it.content}</NavLink></li>
                     )
                 })
             }

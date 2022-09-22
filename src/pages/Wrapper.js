@@ -1,6 +1,8 @@
+import React from 'react'
+
 const Wrapper = ({ children }) => {
     return (
-        <div className="Wrapper">
+        <div className='Wrapper'>
             {children}
         </div>
     )
